@@ -35,7 +35,7 @@ if __name__ == '__main__':
     plt.hist(sumList, bins=16, density=True)
     plt.title('Distribution of Sum of Dice Rolls')
     plt.xlabel('Sum of Dice')
-    plt.ylabel('Number of Instances')
+    plt.ylabel('Probability Density of Each Sum')
     plt.show()
     
             
