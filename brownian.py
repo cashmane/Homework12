@@ -18,28 +18,28 @@ if __name__ == '__main__':
                 positionList.append((I, J))
                 NCount += 1
             else:
-                continue
+                continue #If hits an edge, go back to top of loop
         elif 0.25 < roll < 0.5:
             if I + 1 < L:
                 I = I+1
                 positionList.append((I, J))
                 NCount += 1
             else:
-                continue
+                continue #If hits an edge, go back to top of loop
         elif 0.5 < roll < 0.75:
             if J+1 < L:
                 J = J+1
                 positionList.append((I, J))
                 NCount += 1
             else:
-                continue
+                continue #If hits an edge, go back to top of loop
         elif roll > 0.75:
             if I-1 > 0:
                 I = I-1
                 positionList.append((I, J))
                 NCount += 1
             else:
-                continue
+                continue #If hits an edge, go back to top of loop
 
     xlist = []
     ylist = []
